@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.css">
+  <title>ViaCEP Webservice</title>
+</head>
+
+<body>
+
+  <div class="bg-page">
+    
+    <div class="content">
+
+      <form method="get" action=".">
+        <h1>Consulte CEPs de todo Brasil</h1>
+        <p>Digite o CEP e ao sair do campo o endereço será completado.<br>
+          Se preferir, pode utilizar a tecla TAB após digitar o CEP.</p>
+
+        <div class="form-row">
+          <div class="form-group col-md-3">
+            <label>CEP</label>
+            <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" class="form-control"
+              onblur="pesquisacep(this.value);" />
+          </div>
+          <div class="form-group col-md-9">
+            <label>Rua</label>
+            <input name="rua" type="text" id="rua" size="60" class="form-control">
+          </div>
+        </div>
+
+
+        <div class="form-row">
+          <div class="form-group col-md-5">
+            <label>Bairro</label>
+            <input name="bairro" type="text" id="bairro" size="24" class="form-control">
+          </div>
+          <div class="form-group col-md-4">
+            <label>Cidade</label>
+            <input name="cidade" type="text" id="cidade" size="24" class="form-control">
+          </div>
+          <div class="form-group col-md-1">
+            <label>Estado</label>
+            <input name="uf" type="text" id="uf" size="2" class="form-control">
+          </div>
+          <div class="form-group col-md-2">
+            <label>IBGE</label>
+            <input name="ibge" type="text" id="ibge" size="8" class="form-control">
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+
+
+  <!-- JavaScript (Opcional) -->
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
