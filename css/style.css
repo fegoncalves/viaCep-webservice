@@ -51,7 +51,8 @@ label{
 }
 
 input {
-  font-size: 15px;}
+  font-size: 15px;
+}
 
 .form-control {
   border: 1px solid rgb(175, 175, 175);
